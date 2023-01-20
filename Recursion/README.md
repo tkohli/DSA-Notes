@@ -17,8 +17,15 @@ Note that there could be multiple places where the function may call itself.<br>
 
 ## Steps
 
-function {F(X)}F(X), we will:<br>
+function F(X), we will:<br>
 
 1. Break the problem down into smaller scopes, <br>
-2. Call function {F(x_0)}, F(x_1), ..., F(x_n)F(x) recursively to solve the subproblems of <br>
-3. Finally, process the results from the recursive function calls to solve the problem corresponding to {X}X.
+2. Call function F(x_0), F(x_1), ..., F(x_n)F(x) recursively to solve the subproblems of <br>
+3. Finally, process the results from the recursive function calls to solve the problem corresponding to X.
+
+# Recurrence Relation
+
+There are two important things that one needs to figure out before implementing a recursive function:<br>
+
+1. recurrence relation: the relationship between the result of a problem and the result of its subproblems.<br>
+2. base case: the case where one can compute the answer directly without any further recursion calls. Sometimes, the base cases are also called bottom cases, since they are often the cases where the problem has been reduced to the minimal scale, i.e. the bottom, if we consider that dividing the problem into subproblems is in a top-down manner.<br>
