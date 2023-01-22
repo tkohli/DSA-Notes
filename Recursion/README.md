@@ -29,3 +29,30 @@ There are two important things that one needs to figure out before implementing 
 
 1. recurrence relation: the relationship between the result of a problem and the result of its subproblems.<br>
 2. base case: the case where one can compute the answer directly without any further recursion calls. Sometimes, the base cases are also called bottom cases, since they are often the cases where the problem has been reduced to the minimal scale, i.e. the bottom, if we consider that dividing the problem into subproblems is in a top-down manner.<br>
+
+## Case Study
+
+Now solve fibonacci sequence using recursion, make it recursive tree.<br>
+You'll realize that it is doing same calculation again and again<br>
+Bigger number would start giving TLE.<br>
+Here the concept of memoization comes to play we basically store the values returned by function it either dict or arr such that we do not perform calculation again and again.<br>
+Similarly solve climbing stairs.
+
+# Time complexity of recursion
+
+Given a recursion algorithm, its time complexity O(T) is typically the product of the number of recursion invocations (denoted as R) and the time complexity of calculation (denoted as O(s)) that incurs along with each recursion call:
+<br><br>
+O(T) = R \* O(s)
+<br>
+Thoughts on time complexity of reverse string
+
+# Space Complexity of recursion
+
+The recursion related space refers to the memory cost that is incurred directly by the recursion, i.e. the stack to keep track of recursive function calls. In order to complete a typical function call, the system allocates some space in the stack to hold three important pieces of information:
+<br>
+The returning address of the function call. Once the function call is completed, the program must know where to return to, i.e. the line of code after the function call.<br>
+The parameters that are passed to the function call. <br>
+The local variables within the function call.<br>
+This space in the stack is the minimal cost that is incurred during a function call. However, once the function call is done, this space is freed.<br>
+<br><br>
+O(N) Space
