@@ -54,5 +54,9 @@ The returning address of the function call. Once the function call is completed,
 The parameters that are passed to the function call. <br>
 The local variables within the function call.<br>
 This space in the stack is the minimal cost that is incurred during a function call. However, once the function call is done, this space is freed.<br>
-<br><br>
+<br>
 O(N) Space
+
+## Tail recursion
+
+Tail recursion is a recursion where the recursive call is the final instruction in the recursion function. And there should be only one recursive call in the function.
